@@ -1,0 +1,22 @@
+.info {
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #323232;
+    color: #FFFFFF;
+    padding: 0 90px;
+}
+
+.info__container {
+    display: flex;
+}
+
+.info__item {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.info__text {
+    width: 70%;
+}

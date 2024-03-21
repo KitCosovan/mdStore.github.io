@@ -1,0 +1,26 @@
+{
+    "description": {
+        "title": "PRODUCT STORY",
+        "text": "Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe."
+    },
+    "features": {
+        "title": "FEATURES & BENEFITS",
+        "list": {
+            "item-1": "The upper of the shoes is made with at least 20% recycled materials"
+        }
+    },
+    "details": {
+        "title": "DETAILS",
+        "list": {
+            "item-1": "Textile mesh base",
+            "item-2": "Hairy suede and nubuck overlays",
+            "item-3": "Rubber eyestay",
+            "item-4": "Textile tongue",
+            "item-5": "Medial mesh panel with geometric 5D print",
+            "item-6": "TPU inserts in top eyestay and heel",
+            "item-7": "Textile lining",
+            "item-8": "IMEVA midsole",
+            "item-9": "Rubber outsole"
+        }
+    }
+}
