@@ -38,7 +38,7 @@
 
 /* Track (полоса прокрутки) */
 .product-cards::-webkit-scrollbar-track {
-    background: #f1f1f1; /* цвет фона */
+    background: #DADADA; /* цвет фона */
     border-radius: 6px;
 }
 

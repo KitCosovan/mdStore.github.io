@@ -7,11 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Kit&Artiom</title>
+    <title>KITEM</title>
 </head>
 <body>
     <div class="container">
-        <div class="sup-buttons"></div>
+        <div class="sup-buttons">
+            <div class="sup-buttons__item cart">
+                <img src="./img/icons/cart.svg" alt="cart-icon">
+                <div class="cart__index">5</div>
+            </div>
+        </div>
         <aside class="nav-section">
             <div class="nav-section__logo">
                 <img src="./img/logo.png" alt="logo">
@@ -34,6 +39,40 @@
                     <li class="nav-menu__item">New Balance</li>
                 </ul>
             </header>
+            <section class="product">
+                <div class="product__circle"></div>
+                <div class="product__main-img">
+                    <img src="./img/product-img/13048404_l.png" alt="product-img" class="product__main-img_img">
+                </div>
+                <div class="product__img-slider">
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l_a1.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l_a2.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l_a3.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l_a4.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                    <div class="product__img-slide">
+                        <img src="./img/product-img/13048404_l_a5.png" alt="product-img" class="product__img-slide_img">
+                    </div>
+                </div>
+                <div class="product__about">
+                    <div class="product__title">PRODUCT STORY</div>
+                    <div class="product__descr">Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe.</div>
+                    <div class="product__btns">
+                        <button class="product__btn">Add to cart</button>
+                        <button class="product__price">Total price : $2.000</button>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="info">
             <div class="info__tels">
@@ -57,5 +96,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/img-slider.js"></script>
 </body>
 </html>
