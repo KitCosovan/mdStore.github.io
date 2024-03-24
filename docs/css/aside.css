@@ -14,17 +14,42 @@
 
 .product-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 350px;
+    max-height: 80vh;
+    overflow-y: auto;
     margin-top: 40px;
     gap: 10px;
 }
 
 .product-cards__card {
-    width: 170px;
-    height: 210px;
+    min-width: 170px;
+    min-height: 210px;
     background-color: #38383879;
     border-radius: 20px;
+}
+
+/* Общие стили */
+.product-cards::-webkit-scrollbar {
+    width: 6px; /* ширина скроллбара */
+}
+
+/* Track (полоса прокрутки) */
+.product-cards::-webkit-scrollbar-track {
+    background: #f1f1f1; /* цвет фона */
+    border-radius: 6px;
+}
+
+/* Handle (ручка скроллбара) */
+.product-cards::-webkit-scrollbar-thumb {
+    background: #888; /* цвет ручки */
+    border-radius: 6px; /* скругление углов ручки */
+}
+
+/* Handle при наведении */
+.product-cards::-webkit-scrollbar-thumb:hover {
+    background: #555; /* измененный цвет ручки при наведении */
 }
