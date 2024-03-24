@@ -22,7 +22,8 @@
     display: inline-block;
     width: auto;
     height: auto;
-    padding-left: 69px;
+    padding-left: 85px;
+    padding-top: 55px;
 }
 
 .product__main-img img {
@@ -36,9 +37,69 @@
     justify-content: space-between;
     align-items: center;
     gap: 14px;
-    padding-top: 90px;
+    margin-top: 90px;
     margin-left: 92px;
-    height: 66vh;
+    width: 700px;
+    height: 45vh;
+    overflow-y: auto;
+}
+
+/* Общие стили */
+.product__img-slider::-webkit-scrollbar {
+    width: 2px;
+}
+
+.product__img-slider::-moz-scrollbar {
+    width: 2px;
+}
+
+.product__img-slider::-ms-scrollbar {
+    width: 2px;
+}
+
+/* Track (полоса прокрутки) */
+.product__img-slider::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 6px;
+}
+
+.product__img-slider::-moz-scrollbar-track {
+    background: transparent;
+    border-radius: 6px;
+}
+
+.product__img-slider::-ms-scrollbar-track {
+    background: transparent;
+    border-radius: 6px;
+}
+
+/* Handle (ручка скроллбара) */
+.product__img-slider::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.product__img-slider::-moz-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.product__img-slider::-ms-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Handle при наведении */
+.product__img-slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.product__img-slider::-moz-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.product__img-slider::-ms-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .product__img-slide {
