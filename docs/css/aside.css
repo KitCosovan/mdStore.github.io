@@ -1,5 +1,4 @@
 .nav-section {
-    width: 21.25vw;
     height: 100%;
     background-color: #DADADA;
     position: relative;
@@ -28,18 +27,4 @@
     height: 210px;
     background-color: #38383879;
     border-radius: 20px;
-}
-
-.nav-section__social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 210px;
-    height: 70px;
-    background-color: #323232;
-    border-radius: 15px;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
 }

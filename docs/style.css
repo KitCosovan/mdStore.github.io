@@ -1,13 +1,15 @@
 @import url('./css/aside.css');
-@import url('./css/section.css');
+@import url('./css/main.css');
+@import url('./css/footer.css');
 
 body {
     margin: 0;
+    background-color: #383838;
 }
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 21.25vw 1fr;
-    grid-template-rows: 75.92vh 1fr;
+    grid-template-columns: 21.25vw 78.75vw;
+    grid-template-rows: 90vh 10vh;
 }

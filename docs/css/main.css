@@ -1,0 +1,6 @@
+@import url('./header.css');
+
+.main {
+    grid-column: 2;
+    grid-row: 1;
+}
