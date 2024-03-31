@@ -1,0 +1,81 @@
+@import url('./variables.css');
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150px;
+    max-height: 190px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card__discount {
+    position: absolute;
+    background: #62573ca3;
+    padding: 2px 5px 2px 10px;
+    top: 15px;
+    left: -10px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    color: var(--font-color);
+    z-index: 2;
+}
+
+.card__discount::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    top: 14px;
+    left: 0px;
+    height: 22px;
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid #433b29a3;
+    transform: translateY(-50%);
+}
+
+.card__img {
+    width: 130px;
+    height: 130px;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    color: var(--font-color);
+}
+
+.card__prices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card__price {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--font-color);
+    background: #62573ca3;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.card__price_before {
+    background: #d05858aa;
+    text-decoration: line-through 2px black;
+}

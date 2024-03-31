@@ -39,10 +39,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 14px;
-    margin-top: 90px;
+    margin-top: 15px;
     margin-left: 92px;
     width: 700px;
-    height: 45vh;
+    height: 55vh;
     overflow-y: auto;
 }
 

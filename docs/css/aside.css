@@ -27,9 +27,9 @@
 }
 
 .product-cards__card {
-    min-width: 170px;
-    min-height: 210px;
-    background-color: #38383879;
+    min-width: 150px;
+    min-height: 190px;
+    background-color: #3838389c;
     border-radius: 20px;
 }
 
