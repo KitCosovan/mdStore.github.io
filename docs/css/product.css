@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 .product {
     margin-top: 30px;
     height: 55vh;
@@ -12,7 +14,7 @@
     height: 500px;
     position: absolute;
     border-radius: 100%;
-    background-color: #62573C;
+    background-color: var(--dark-accent);
     z-index: -1;
     margin-left: 69px;
     margin-top: 59px;
@@ -75,38 +77,30 @@
 
 /* Handle (ручка скроллбара) */
 .product__img-slider::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--dark-accent);
     border-radius: 6px;
 }
 
 .product__img-slider::-moz-scrollbar-thumb {
-    background: #888;
+    background: var(--dark-accent);
     border-radius: 6px;
 }
 
 .product__img-slider::-ms-scrollbar-thumb {
-    background: #888;
+    background: var(--dark-accent);
     border-radius: 6px;
-}
-
-/* Handle при наведении */
-.product__img-slider::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.product__img-slider::-moz-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.product__img-slider::-ms-scrollbar-thumb:hover {
-    background: #555;
 }
 
 .product__img-slide {
     cursor: pointer;
     border-radius: 15px;
-    border: solid 1px #62573C;
+    border: solid 1px var(--dark-accent);
     background-color: #00000047;
+    transition: all 0.5s ease-out;
+}
+
+.product__img-slide:hover {
+    background-color: #a5956877;
 }
 
 .product__img-slide img {
@@ -122,14 +116,14 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 46px;
-    color: #DADADA;
+    color: var(--font-color);
 }
 
 .product__descr {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 14px;
-    color: #DADADA;
+    color: var(--font-color);
     margin-top: 37px;
 }
 
@@ -147,11 +141,16 @@
     border-radius: 15px;
     border: solid 3px #A59568;
     background-color: #00000047;
+    transition: all 0.5s ease-out;
 
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 14px;
-    color: #DADADA;
+    color: var(--font-color);
+}
+
+.product__btn:hover{
+    background-color: #a5956877;
 }
 
 .product__price {
@@ -164,5 +163,5 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #DADADA;
+    color: var(--font-color);
 }

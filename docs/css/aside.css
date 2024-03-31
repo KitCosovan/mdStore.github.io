@@ -1,6 +1,8 @@
+@import url('./variables.css');
+
 .nav-section {
     height: 100%;
-    background-color: #DADADA;
+    background-color: var(--font-color);
     position: relative;
     grid-column: 1;
     grid-row-start: 1;

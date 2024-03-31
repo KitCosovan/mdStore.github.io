@@ -1,10 +1,12 @@
+@import url('./variables.css');
+
 .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-column: 2;
     grid-row: 2;
-    background-color: #323232;
+    background-color: var(--footer-color);
     color: #FFFFFF;
     padding: 0 90px;
 }
@@ -16,7 +18,7 @@
     padding-top: 3px;
     align-items: center;
     justify-content: space-around;
-    background-color: #383838;
+    background-color: var(--main-color);
     border-radius: 15px;
     border: solid 3px #62573C;
 }
@@ -26,23 +28,9 @@
     align-items: center;
     height: 50px;
     gap: 20px;
-    background-color: #383838;
+    background-color: var(--main-color);
     border-radius: 15px;
     padding: 0 15px;
-}
-
-.info__company-name {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    gap: 20px;
-    background-color: #383838;
-    border-radius: 15px;
-    padding: 0 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    color: #A59568;
 }
 
 .info__tel {
