@@ -18,6 +18,7 @@ export function displayProductDescription(product) {
     })
 
     document.querySelector('.product__main-img_img').src = product.img[0];
+    document.querySelector('.product__main-img_img').alt = 'product-img';
     document.querySelector('.product__title').innerText = `${product.title}`;
     document.querySelector('.product__descr').innerText = `${product.text}`;
     document.querySelector('.product__price').innerText = `Price : ${product.price} MDL`;
