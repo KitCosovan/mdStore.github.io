@@ -1,0 +1,67 @@
+@import url('./variables.css');
+
+.intro {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20%;
+    row-gap: 30px;
+    margin: 90px auto 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+.intro__title {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--font-color);
+}
+
+.intro__info {
+    grid-column: 1;
+    grid-row: 2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+.intro__btn {
+    grid-column: 1;
+    grid-row: 3;
+
+    cursor: pointer;
+    width: 75%;
+    height: 95px;
+    border-radius: 15px;
+    border: solid 3px #A59568;
+    background-color: #00000047;
+    transition: all 0.5s ease-out;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    color: var(--font-color);
+}
+
+.intro__btn:hover{
+    background-color: #a5956877;
+}
+
+.intro__circle {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    align-self: flex-end;
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-accent);
+    border-radius: 100%;
+}

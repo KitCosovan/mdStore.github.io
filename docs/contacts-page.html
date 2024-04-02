@@ -10,15 +10,15 @@
     <title>KITEM</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container on-intro__container">
         <div class="sup-buttons">
             <div class="sup-buttons__item cart">
                 <img src="./img/icons/cart.svg" alt="cart-icon">
                 <div class="cart__index">5</div>
             </div>
         </div>
-        <aside class="nav-section">
-            <div class="nav-section__logo">
+        <aside class="nav-section hidden">
+            <div class="nav-section__logo on-intro__logo">
                 <img src="./img/logo.png" alt="logo">
             </div>
             <div class="product-cards"></div>
@@ -27,24 +27,28 @@
             <header class="nav-menu">
                 <ul class="nav-menu__list">
                     <li class="nav-menu__item"><a href="./main-page.html">Main</a></li>
-                    <li class="nav-menu__item nav-menu__item_active">Puma</li>
-                    <li class="nav-menu__item">Adidas</li>
-                    <li class="nav-menu__item">Nike</li>
-                    <li class="nav-menu__item">New Balance</li>
+                    <li class="nav-menu__item"><a href="./index.html">Catalog</a></li>
+                    <li class="nav-menu__item nav-menu__item_active"><a href="./contacts-page.html">Contacts</a></li>
+                    <li class="nav-menu__item"><a href="#">Delivery</a></li>
+                    <li class="nav-menu__item"><a href="#">About</a></li>
                 </ul>
             </header>
-            <section class="product">
-                <div class="product__circle"></div>
-                <div class="product__main-img">
-                    <img src="" alt="product-img" class="product__main-img_img">
+            <section class="contacts">
+                <div class="contacts__title">Lorem Ipsum</div>
+                <div class="contacts__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi possimus non, accusamus distinctio magnam veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur inventore quia in reprehenderit, architecto aut aliquid nisi facilis aspernatur assumenda praesentium voluptates vitae. Corrupti quidem blanditiis deleniti ipsam officiis. Pariatur.</div>
+                <div class="contacts__tels">
+                    <div class="contacts__tel">+373 (79) 123 456</div>
+                    <div class="contacts__tel">+373 (79) 456 123</div>
                 </div>
-                <div class="product__img-slider"></div>
-                <div class="product__about">
-                    <div class="product__title"></div>
-                    <div class="product__descr"></div>
-                    <div class="product__btns">
-                        <button class="product__btn">Add to cart</button>
-                        <button class="product__price"></button>
+                <div class="contacts__social">
+                    <div class="contacts__social-item">
+                        <img src="./img/icons/facebook.svg" alt="facebook">
+                    </div>
+                    <div class="contacts__social-item">
+                        <img src="./img/icons/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="contacts__social-item">
+                        <img src="./img/icons/twitter.svg" alt="twitter">
                     </div>
                 </div>
             </section>
@@ -68,7 +72,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="./index.js" type="module" defer></script>
 </body>
 </html>

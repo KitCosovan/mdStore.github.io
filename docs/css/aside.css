@@ -1,5 +1,15 @@
 @import url('./variables.css');
 
+.hidden {
+    left: -100%;
+}
+
+.on-intro__logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
 .nav-section {
     height: 100%;
     background-color: var(--font-color);
@@ -10,7 +20,7 @@
 }
 
 .nav-section__logo {
-    padding-top: 45px;
+    padding-top: 25px;
     text-align: center;
 }
 

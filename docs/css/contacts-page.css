@@ -1,0 +1,77 @@
+@import url('./variables.css');
+
+.contacts {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 40% 45%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15%;
+    row-gap: 30px;
+    margin: 90px auto 0 auto;
+}
+
+.contacts__title {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--font-color);
+}
+
+.contacts__info {
+    grid-column: 1;
+    grid-row: 2;
+    grid-column: 1;
+    grid-row: 2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+.contacts__tels {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts__tel {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: solid 3px var(--dark-accent);
+    border-radius: 8px;
+    transition: all 0.5s ease-out;
+}
+
+.contacts__social {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts__social-item {
+    cursor: pointer;
+    padding: 10px;
+    border: solid 3px var(--dark-accent);
+    border-radius: 8px;
+    transition: all 0.5s ease-out;
+}
+
+.contacts__social-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.contacts__social-item:hover, .contacts__tel:hover {
+    background-color: #a5956877;
+}
