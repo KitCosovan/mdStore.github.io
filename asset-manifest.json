@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mdStore.github.io/static/css/main.1f3c1dcc.css",
+    "main.js": "/mdStore.github.io/static/js/main.b514cf2d.js",
+    "static/media/instagram.svg": "/mdStore.github.io/static/media/instagram.810fc215d1cfd8b0bc386ca41037e668.svg",
+    "static/media/twitter.svg": "/mdStore.github.io/static/media/twitter.ba0e4cb2530f926839b72d0a0363eeb6.svg",
+    "static/media/cart.svg": "/mdStore.github.io/static/media/cart.91b2258cedaa8cbe12d3a3347ce05bc9.svg",
+    "index.html": "/mdStore.github.io/index.html",
+    "static/media/facebook.svg": "/mdStore.github.io/static/media/facebook.0743a3a00fdadd2477b9c68cceb19b5e.svg",
+    "main.1f3c1dcc.css.map": "/mdStore.github.io/static/css/main.1f3c1dcc.css.map",
+    "main.b514cf2d.js.map": "/mdStore.github.io/static/js/main.b514cf2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f3c1dcc.css",
+    "static/js/main.b514cf2d.js"
+  ]
+}
