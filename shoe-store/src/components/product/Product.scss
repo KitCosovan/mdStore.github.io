@@ -1,0 +1,141 @@
+@import '../../variables.scss';
+
+.product {
+    margin-top: 30px;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    &__circle {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: $dark-accent;
+        z-index: -1;
+        margin-left: 69px;
+        margin-top: 59px;
+    }
+    &__main-img {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding-left: 85px;
+        padding-top: 55px;
+        img {
+            max-width: 468px;
+            max-height: 468px;
+        }
+    }
+    &__img-slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        margin-top: 15px;
+        margin-left: 92px;
+        width: 700px;
+        height: 55vh;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+        &::-moz-scrollbar {
+            width: 2px;
+        }
+        &::-ms-scrollbar {
+            width: 2px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-moz-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-ms-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
+        &::-moz-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
+        &::-ms-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
+    }
+    &__img-slide {
+        cursor: pointer;
+        border-radius: 15px;
+        border: solid 1px $dark-accent;
+        background-color: #00000047;
+        transition: all 0.5s ease-out;
+        &:hover {
+            background-color: #a5956877;
+        }
+        img {
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__about {
+        margin-left: 92px;
+    }
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 46px;
+        color: $font-color;
+    }
+    &__descr {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: $font-color;
+        margin-top: 37px;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 42px;
+    }
+    &__btn {
+        cursor: pointer;
+        width: 155px;
+        height: 55px;
+        border-radius: 15px;
+        border: solid 3px #A59568;
+        background-color: #00000047;
+        transition: all 0.5s ease-out;
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: $font-color;
+        &:hover{
+            background-color: #a5956877;
+        }
+    }
+    &__price {
+        width: 198px;
+        height: 55px;
+        border-radius: 15px;
+        border: solid 3px #000000;
+        background-color: #A59568;
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: $font-color;
+    }
+}

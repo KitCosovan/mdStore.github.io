@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+
+.nav-menu {
+    display: block;
+    width: 50%;
+    height: 70px;
+    margin: 25px auto 0 auto;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        color: $font-color;
+    }
+    &__item::after {
+        width: 0;
+    }
+}
+
+.nav-menu__item_active::after, .nav-menu__item::after, .nav-menu__item:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #A59568;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.nav-menu__item_active::after, .nav-menu__item:hover::after {
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: $font-color;
+}

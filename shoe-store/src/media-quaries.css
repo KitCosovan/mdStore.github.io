@@ -1,0 +1,114 @@
+@media (max-width: 1700px) {
+    .product__title {
+        font-size: 40px;
+    }
+    .product__circle {
+        width: 450px;
+        height: 450px;
+    }
+    .product__main-img {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .product__img-slider {
+        margin-left: 50px;
+        width: 755px;
+    }
+    .product__descr {
+        font-size: 12px;
+    }
+    .nav-section__logo {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .container {
+        grid-template-rows: 93% 7% !important;
+    }
+    .product__circle {
+        width: 400px;
+        height: 400px;
+    }
+    .product__main-img {
+        padding-left: 60px;
+    }
+    .product__main-img img {
+        max-width: 390px;
+        max-height: 390px;
+    }
+    .product__btn {
+        width: 110px;
+    }
+    .sup-buttons__item img {
+        width: 20px;
+        height: 20px;
+    }
+    .sup-buttons {
+        padding: 10px 10px 8px 8px;
+    }
+    .info__social {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+    }
+    .info__social-item img{
+        width: 30px;
+        height: 30px;
+    }
+    .info__tel {
+        font-size: 12px;
+    }
+    .info__tels {
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .product__title {
+        font-size: 33px;
+    }
+    .product__descr {
+        font-size: 10px;
+    }
+    .product__price {
+        width: 125px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product__circle {
+        width: 300px;
+        height: 300px;
+    }
+    .product__main-img {
+        padding-left: 65px;
+    }
+    .product__main-img img {
+        max-width: 290px;
+        max-height: 290px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .product__title {
+        font-size: 28px;
+    }
+    .product__about {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product__circle {
+        width: 200px;
+        height: 200px;
+    }
+    .product__main-img {
+        padding-left: 20px;
+    }
+}
