@@ -16,7 +16,7 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
-    axios.get('db.json')
+    axios.get('/db.json')
       .then(response => {
         const data = response.data;
         const productKeys = Object.keys(data);
@@ -28,9 +28,7 @@ function App() {
                 title: product.title,
                 text: product.text,
                 price: product.price,
-                old: product.oldPrice,
-                images: product.img,
-                img: product.img[0]
+                old: product.oldPrice
             };
         });
         setProducts(productsData);

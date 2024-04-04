@@ -2,6 +2,7 @@ import './Aside.scss';
 import './AsideCard.scss';
 
 import logo from '../../img/logo.png';
+import imgMain from '../../img/product-img/13048404_l.png';
 
 const Aside = ({ products, onProductSelect }) => {
 
@@ -15,7 +16,7 @@ const Aside = ({ products, onProductSelect }) => {
                     <div key={index} className="product-cards__card card" onClick={() => onProductSelect(product)}>
                         <div className="card__discount">{product.discount}</div>
                         <div className="card__img">
-                            <img src={product.img} alt="preview-product-img" />
+                            <img src={imgMain} alt="preview-product-img" />
                         </div>
                         <div className="card__title">{product.title}</div>
                         <div className="card__prices">
