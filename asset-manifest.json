@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/mdStore.github.io/static/css/main.1f3c1dcc.css",
-    "main.js": "/mdStore.github.io/static/js/main.e1e4b362.js",
+    "main.css": "/mdStore.github.io/static/css/main.0fcab1c5.css",
+    "main.js": "/mdStore.github.io/static/js/main.0ae0daea.js",
+    "static/media/13048404_l_a5.png": "/mdStore.github.io/static/media/13048404_l_a5.8cec0818fe7ad3491b1c.png",
+    "static/media/13048404_l_a4.png": "/mdStore.github.io/static/media/13048404_l_a4.dbc71ceb5b9ee04797c8.png",
+    "static/media/13048404_l.png": "/mdStore.github.io/static/media/13048404_l.ce1173bf76b721d83499.png",
+    "static/media/13048404_l_a2.png": "/mdStore.github.io/static/media/13048404_l_a2.5e87a2af528259819c8d.png",
+    "static/media/13048404_l_a1.png": "/mdStore.github.io/static/media/13048404_l_a1.c3aed2601d8e5f74f825.png",
+    "static/media/13048404_l_a3.png": "/mdStore.github.io/static/media/13048404_l_a3.b9f28f5de380e9af1c9b.png",
     "static/media/instagram.svg": "/mdStore.github.io/static/media/instagram.c5181b0770b94d061366252cf3d82982.svg",
     "static/media/twitter.svg": "/mdStore.github.io/static/media/twitter.552380103829201cf993f655189c4c86.svg",
     "static/media/cart.svg": "/mdStore.github.io/static/media/cart.bb028af1d5733f1b35b387dc34815d41.svg",
     "index.html": "/mdStore.github.io/index.html",
     "static/media/facebook.svg": "/mdStore.github.io/static/media/facebook.2d946d6b0fe8031b2cdcadd0b2386b48.svg",
-    "main.1f3c1dcc.css.map": "/mdStore.github.io/static/css/main.1f3c1dcc.css.map",
-    "main.e1e4b362.js.map": "/mdStore.github.io/static/js/main.e1e4b362.js.map"
+    "main.0fcab1c5.css.map": "/mdStore.github.io/static/css/main.0fcab1c5.css.map",
+    "main.0ae0daea.js.map": "/mdStore.github.io/static/js/main.0ae0daea.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f3c1dcc.css",
-    "static/js/main.e1e4b362.js"
+    "static/css/main.0fcab1c5.css",
+    "static/js/main.0ae0daea.js"
   ]
 }
