@@ -2,6 +2,7 @@ import './App.scss';
 import '../../media-quaries.css';
 
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 import Header from '../header/Header';
 import SupButtons from '../supButtons/SupButtons';
@@ -15,24 +16,24 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
-    fetch('/db/example.json')
-      .then(response => response.json())
-      .then(data => {
-          const productKeys = Object.keys(data);
-          const productsData = productKeys.map(key => {
-              const product = data[key];
-              return {
-                  key: key,
-                  discount: product.discount,
-                  title: product.title,
-                  text: product.text,
-                  price: product.price,
-                  old: product.oldPrice,
-                  images: product.img,
-                  img: product.img[0]
-              };
-          });
-          setProducts(productsData);
+    axios.get('db.json')
+      .then(response => {
+        const data = response.data;
+        const productKeys = Object.keys(data);
+        const productsData = productKeys.map(key => {
+            const product = data[key];
+            return {
+                key: key,
+                discount: product.discount,
+                title: product.title,
+                text: product.text,
+                price: product.price,
+                old: product.oldPrice,
+                images: product.img,
+                img: product.img[0]
+            };
+        });
+        setProducts(productsData);
       })
       .catch(error => console.error('Ошибка чтения файла: ', error));
   }, []);
