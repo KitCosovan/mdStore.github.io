@@ -2,6 +2,8 @@ import './Product.scss';
 
 import { useState } from 'react';
 
+import Skeleton from '../skeleton/Skeleton';
+
 import imgMain from '../../img/product-img-png/13048404_l.png';
 import imgFirst from '../../img/product-img-png/13048404_l_a1.png';
 import imgSecond from '../../img/product-img-png/13048404_l_a2.png';
@@ -22,7 +24,7 @@ const Product = ({ product }) => {
     }
 
     if (!product) {
-        return <div>Loading...</div>;
+        return <Skeleton />;
     }
 
     return (
