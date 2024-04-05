@@ -1,6 +1,7 @@
 import './Header.scss';
 
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -30,11 +31,11 @@ const Header = () => {
     return (
         <header className="nav-menu">
             <ul className="nav-menu__list">
-                <li className="nav-menu__item"><a href="#">Main</a></li>
-                <li className="nav-menu__item nav-menu__item_active"><a href="#">Catalog</a></li>
-                <li className="nav-menu__item"><a href="#">Contacts</a></li>
-                <li className="nav-menu__item"><a href="#">Delivery</a></li>
-                <li className="nav-menu__item"><a href="#">About</a></li>
+                <li className="nav-menu__item"><NavLink to='/' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Main</NavLink></li>
+                <li className="nav-menu__item"><NavLink to='/catalog' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Catalog</NavLink></li>
+                <li className="nav-menu__item"><NavLink to='/contacts' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Contacts</NavLink></li>
+                <li className="nav-menu__item"><NavLink to='/delivery' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Delivery</NavLink></li>
+                <li className="nav-menu__item"><NavLink to='/about' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>About</NavLink></li>
             </ul>
         </header>
     )

@@ -1,17 +1,25 @@
 import './Product.scss';
 
-import imgMain from '../../img/product-img/13048404_l.png';
-import imgFirst from '../../img/product-img/13048404_l_a1.png';
-import imgSecond from '../../img/product-img/13048404_l_a2.png';
-import imgThird from '../../img/product-img/13048404_l_a3.png';
-import imgFour from '../../img/product-img/13048404_l_a4.png';
-import imgFive from '../../img/product-img/13048404_l_a5.png';
+import { useState } from 'react';
+
+import imgMain from '../../img/product-img-png/13048404_l.png';
+import imgFirst from '../../img/product-img-png/13048404_l_a1.png';
+import imgSecond from '../../img/product-img-png/13048404_l_a2.png';
+import imgThird from '../../img/product-img-png/13048404_l_a3.png';
+import imgFour from '../../img/product-img-png/13048404_l_a4.png';
+import imgFive from '../../img/product-img-png/13048404_l_a5.png';
 
 const Product = ({ product }) => {
 
+    const [previewImg, setPreviewImg] = useState(imgMain);
+
     const images = [
-        imgFirst, imgSecond, imgThird, imgFour, imgFive
+        imgMain, imgFirst, imgSecond, imgThird, imgFour, imgFive
     ]
+
+    const handleClickImg = (image) => {
+        setPreviewImg(image);
+    }
 
     if (!product) {
         return <div>Loading...</div>;
@@ -21,11 +29,11 @@ const Product = ({ product }) => {
         <section className="product">
             <div className="product__circle"></div>
             <div className="product__main-img">
-                <img src={imgMain} alt="product-img" className="product__main-img_img" />
+                <img src={previewImg} alt="product-img" className="product__main-img_img" />
             </div>
             <div className="product__img-slider">
                 {images.map((image, index) => (
-                    <div key={index} className="product__img-slide">
+                    <div key={index} className="product__img-slide" onClick={() => handleClickImg(image)}>
                         <img src={image} alt="product-img" className="product__img-slide_img"/>
                     </div>
                 ))}

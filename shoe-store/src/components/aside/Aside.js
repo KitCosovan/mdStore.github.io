@@ -2,7 +2,7 @@ import './Aside.scss';
 import './AsideCard.scss';
 
 import logo from '../../img/logo.png';
-import imgMain from '../../img/product-img/13048404_l.png';
+import imgMain from '../../img/product-img-png/13048404_l.png';
 
 const Aside = ({ products, onProductSelect }) => {
 
