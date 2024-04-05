@@ -3,6 +3,7 @@ import './Product.scss';
 import { useState } from 'react';
 
 import Skeleton from '../skeleton/Skeleton';
+import Modal from '../modal/Modal';
 
 import imgMain from '../../img/product-img-png/13048404_l.png';
 import imgFirst from '../../img/product-img-png/13048404_l_a1.png';
@@ -14,6 +15,16 @@ import imgFive from '../../img/product-img-png/13048404_l_a5.png';
 const Product = ({ product }) => {
 
     const [previewImg, setPreviewImg] = useState(imgMain);
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsOpen(false);
+    }
 
     const images = [
         imgMain, imgFirst, imgSecond, imgThird, imgFour, imgFive
@@ -30,13 +41,20 @@ const Product = ({ product }) => {
     return (
         <section className="product">
             <div className="product__circle"></div>
+            {isOpen && <Modal isOpen={isOpen} closeModal={closeModal} previewImg={previewImg}/>}
             <div className="product__main-img">
-                <img src={previewImg} alt="product-img" className="product__main-img_img" />
+                <img src={previewImg} alt="product-img" className="product__main-img_img" onClick={openModal} />
             </div>
             <div className="product__img-slider">
                 {images.map((image, index) => (
-                    <div key={index} className="product__img-slide" onClick={() => handleClickImg(image)}>
-                        <img src={image} alt="product-img" className="product__img-slide_img"/>
+                    <div
+                        key={index}
+                        className="product__img-slide"
+                        onClick={() => handleClickImg(image)}>
+                        <img
+                            src={image}
+                            alt="product-img"
+                            className="product__img-slide_img"/>
                     </div>
                 ))}
             </div>
