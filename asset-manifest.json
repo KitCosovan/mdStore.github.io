@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mdStore.github.io/static/css/main.8bf71d69.css",
-    "main.js": "/mdStore.github.io/static/js/main.aa9a7857.js",
+    "main.css": "/mdStore.github.io/static/css/main.c35f9520.css",
+    "main.js": "/mdStore.github.io/static/js/main.58848bd5.js",
     "static/media/13048404_l_a5.png": "/mdStore.github.io/static/media/13048404_l_a5.8cec0818fe7ad3491b1c.png",
     "static/media/13048404_l_a4.png": "/mdStore.github.io/static/media/13048404_l_a4.dbc71ceb5b9ee04797c8.png",
     "static/media/13048404_l.png": "/mdStore.github.io/static/media/13048404_l.ce1173bf76b721d83499.png",
@@ -13,11 +13,11 @@
     "static/media/cart.svg": "/mdStore.github.io/static/media/cart.bb028af1d5733f1b35b387dc34815d41.svg",
     "index.html": "/mdStore.github.io/index.html",
     "static/media/facebook.svg": "/mdStore.github.io/static/media/facebook.2d946d6b0fe8031b2cdcadd0b2386b48.svg",
-    "main.8bf71d69.css.map": "/mdStore.github.io/static/css/main.8bf71d69.css.map",
-    "main.aa9a7857.js.map": "/mdStore.github.io/static/js/main.aa9a7857.js.map"
+    "main.c35f9520.css.map": "/mdStore.github.io/static/css/main.c35f9520.css.map",
+    "main.58848bd5.js.map": "/mdStore.github.io/static/js/main.58848bd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bf71d69.css",
-    "static/js/main.aa9a7857.js"
+    "static/css/main.c35f9520.css",
+    "static/js/main.58848bd5.js"
   ]
 }
