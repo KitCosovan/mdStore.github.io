@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import Header from '../../header/Header';
-import SupButtons from '../../supButtons/SupButtons';
 import Product from '../../product/Product';
 import Aside from '../../aside/Aside';
 import Footer from '../../footer/Footer';
@@ -40,15 +39,14 @@ const CatalogPage = () => {
     }
 
     return (
-        <div className="container">
-            <SupButtons />
+        <>
             <Aside products={products} onProductSelect={handleProductSelect}/>
             <main className="main">
                 <Header />
                 <Product product={selectedProduct}/>
             </main>
             <Footer />
-        </div>
+        </>
     )
 }
 

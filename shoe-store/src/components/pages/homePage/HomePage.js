@@ -2,13 +2,11 @@ import './homePage.scss';
 import '../../../media-quaries.css';
 
 import Header from '../../header/Header';
-import SupButtons from '../../supButtons/SupButtons';
 import Footer from '../../footer/Footer';
 
 const HomePage = () => {
     return (
-        <div className="container on-intro__container">
-            <SupButtons />
+        <>
             <main className="main">
                 <Header />
                 <section className="intro">
@@ -19,7 +17,7 @@ const HomePage = () => {
                 </section>
             </main>
             <Footer />
-        </div>
+        </>
     )
 }
 

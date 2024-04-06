@@ -2,7 +2,6 @@ import './contactsPage.scss';
 import '../../../media-quaries.css';
 
 import Header from '../../header/Header';
-import SupButtons from '../../supButtons/SupButtons';
 import Footer from '../../footer/Footer';
 
 import facebook from '../../../img/icons/facebook.svg';
@@ -11,8 +10,7 @@ import twitter from '../../../img/icons/twitter.svg';
 
 const ContactsPage = () => {
     return (
-        <div className="container on-intro__container">
-            <SupButtons />
+        <>
             <main className="main">
                 <Header />
                 <section className="contacts">
@@ -36,7 +34,7 @@ const ContactsPage = () => {
                 </section>
             </main>
             <Footer />
-        </div>
+        </>
     )
 }
 
