@@ -32,7 +32,7 @@ function AppContent() {
 
   return (
     <div className={`container ${!isVisiblePage ? 'on-intro__container' : ''}`}>
-      <SupButtons />
+      <SupButtons productsNum={selectedProducts.length}/>
       <Routes>
         <Route path='/cart' element={<CartPage products={selectedProducts} setProducts={setSelectedProducts}/>}/>
         <Route path='/' element={<HomePage />} />
