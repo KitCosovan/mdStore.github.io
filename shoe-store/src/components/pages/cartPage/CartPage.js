@@ -1,6 +1,8 @@
 import './cartPage.scss';
 import '../../../media-quaries.css';
 
+import { NavLink } from 'react-router-dom';
+
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 
@@ -33,7 +35,7 @@ const CartPage = () => {
                     </div>
                     <div className="cart-page__politic">
                         <input type="checkbox" className="cart-page__politic_check" />
-                        <div className="cart-page__politic__text">By confirming your order you agree to the terms and conditions of the <a href="#">privacy policy</a></div>
+                        <div className="cart-page__politic__text">By confirming your order you agree to the terms and conditions of the <NavLink to='/privacy'>privacy policy</NavLink></div>
                     </div>
                     <button className="cart-page__btn">NEXT</button>
                 </section>

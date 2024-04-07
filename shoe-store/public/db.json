@@ -4,27 +4,59 @@
         "title": "PRODUCT STORY",
         "text": "Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe.",
         "price": "2000",
-        "oldPrice": "3000"
+        "oldPrice": "3000",
+        "images": [
+            "/img/product-img-png/13048404_l.png",
+            "/img/product-img-png/13048404_l_a1.png",
+            "/img/product-img-png/13048404_l_a2.png",
+            "/img/product-img-png/13048404_l_a3.png",
+            "/img/product-img-png/13048404_l_a4.png",
+            "/img/product-img-png/13048404_l_a5.png"
+        ]
     },
     "pumaOne": {
         "discount": "100% off",
         "title": "PRODUCT ONE",
         "text": "Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe.",
         "price": "2000",
-        "oldPrice": "3000"
+        "oldPrice": "3000",
+        "images": [
+            "/img/product-img-png/13048404_l.png",
+            "/img/product-img-png/13048404_l_a1.png",
+            "/img/product-img-png/13048404_l_a2.png",
+            "/img/product-img-png/13048404_l_a3.png",
+            "/img/product-img-png/13048404_l_a4.png",
+            "/img/product-img-png/13048404_l_a5.png"
+        ]
     },
     "pumaTwo": {
         "discount": "100% off",
         "title": "PRODUCT TWO",
         "text": "Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe.",
         "price": "2000",
-        "oldPrice": "3000"
+        "oldPrice": "3000",
+        "images": [
+            "/img/product-img-png/13048404_l.png",
+            "/img/product-img-png/13048404_l_a1.png",
+            "/img/product-img-png/13048404_l_a2.png",
+            "/img/product-img-png/13048404_l_a3.png",
+            "/img/product-img-png/13048404_l_a4.png",
+            "/img/product-img-png/13048404_l_a5.png"
+        ]
     },
     "pumaThree": {
         "discount": "100% off",
         "title": "PRODUCT THREE",
         "text": "Inspired by PUMA’s Icons of Speed, the Spirex is a new progressive runner made for bold streetwear choices. Its design synthesizes various performance archive elements to form a fresher Futro DNA. The outsole draws inspiration from runners’ spikes, while the upper is a reinterpretation of PUMA’s soccer and motorsport heritage. This premium execution features a textile base and 5D print Formstrip along with nubuck overlays which convey the premium focus of this one of a kind shoe.",
         "price": "2000",
-        "oldPrice": "3000"
+        "oldPrice": "3000",
+        "images": [
+            "/img/product-img-png/13048404_l.png",
+            "/img/product-img-png/13048404_l_a1.png",
+            "/img/product-img-png/13048404_l_a2.png",
+            "/img/product-img-png/13048404_l_a3.png",
+            "/img/product-img-png/13048404_l_a4.png",
+            "/img/product-img-png/13048404_l_a5.png"
+        ]
     }
 }

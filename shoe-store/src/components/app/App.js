@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 import SupButtons from '../supButtons/SupButtons';
 import CartPage from '../pages/cartPage/CartPage';
+import PrivacyPolicy from '../pages/privacyPolicy/PrivacyPolicy';
 import HomePage from '../pages/homePage/HomePage';
 import CatalogPage from '../pages/catalogPage/CatalogPage';
 import ContactsPage from '../pages/contactsPage/ContactsPage';
@@ -38,6 +39,7 @@ function AppContent() {
         <Route path='/contacts' element={<ContactsPage />} />
         <Route path='/delivery' element={<DeliveryPage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/privacy' element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );

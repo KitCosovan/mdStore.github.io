@@ -26,7 +26,8 @@ const CatalogPage = () => {
                     title: product.title,
                     text: product.text,
                     price: product.price,
-                    old: product.oldPrice
+                    old: product.oldPrice,
+                    images: product.images
                 };
             });
             setProducts(productsData);
