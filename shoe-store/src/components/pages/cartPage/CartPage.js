@@ -6,16 +6,29 @@ import { NavLink } from 'react-router-dom';
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 
-const CartPage = () => {
+const CartPage = ({ products, setProducts }) => {
+
+    const handleDeleteProduct = (index) => {
+        const newProductsList = products.filter((_, i) => i !== index);
+        setProducts(newProductsList);
+    }
+
     return (
         <>
             <main className="main">
                 <Header />
                 <section className="cart-page">
                     <div className="cart-page__products">
-                        <div className="cart-page__product"></div>
-                        <div className="cart-page__product"></div>
-                        <div className="cart-page__product"></div>
+                        {products.map((product, index) => (
+                            <div className="cart-page__product" key={index}>
+                                <div className="cart-page__product_img">
+                                    <img src={`${process.env.PUBLIC_URL}/${product.images[0]}`} alt="product-img" />
+                                </div>
+                                <div className="cart-page__product_title">{product.title}</div>
+                                <div className="cart-page__product_price">{product.price} MDL</div>
+                                <div className="cart-page__product_delete-btn" onClick={() => handleDeleteProduct(index)}>&times;</div>
+                            </div>
+                        ))}
                     </div>
                     <div className="cart-page__info">
                         <div className="cart-page__title">Total</div>

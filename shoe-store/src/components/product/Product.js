@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Skeleton from '../skeleton/Skeleton';
 import Modal from '../modal/Modal';
 
-const Product = ({ product }) => {
+const Product = ({ product, products, setProducts }) => {
 
     const [previewImg, setPreviewImg] = useState();
 
@@ -37,6 +37,12 @@ const Product = ({ product }) => {
         setPreviewImg(image);
     }
 
+    const handleAddProduct = (product) => {
+        const newProduct = product;
+        const newProductList = [...products, newProduct];
+        setProducts(newProductList);
+    }
+
     if (!product) {
         return <Skeleton />;
     }
@@ -65,7 +71,7 @@ const Product = ({ product }) => {
                 <div className="product__title">{product.title}</div>
                 <div className="product__descr">{product.text}</div>
                 <div className="product__btns">
-                    <button className="product__btn">Add to cart</button>
+                    <button className="product__btn" onClick={() => handleAddProduct(product)}>Add to cart</button>
                     <button className="product__price">{product.price} MDL</button>
                 </div>
             </div>

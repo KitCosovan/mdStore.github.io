@@ -24,6 +24,7 @@ function App() {
 function AppContent() {
   const location = useLocation();
   const [isVisiblePage, setIsVisiblePage] = useState(false);
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
   useEffect(() => {
     setIsVisiblePage(location.pathname === '/catalog');
@@ -33,9 +34,9 @@ function AppContent() {
     <div className={`container ${!isVisiblePage ? 'on-intro__container' : ''}`}>
       <SupButtons />
       <Routes>
-        <Route path='/cart' element={<CartPage />}/>
+        <Route path='/cart' element={<CartPage products={selectedProducts} setProducts={setSelectedProducts}/>}/>
         <Route path='/' element={<HomePage />} />
-        <Route path='/catalog' element={<CatalogPage />} />
+        <Route path='/catalog' element={<CatalogPage cartProducts={selectedProducts} setCartProducts={setSelectedProducts}/>} />
         <Route path='/contacts' element={<ContactsPage />} />
         <Route path='/delivery' element={<DeliveryPage />} />
         <Route path='/about' element={<AboutPage />} />
