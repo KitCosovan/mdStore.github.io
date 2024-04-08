@@ -1,15 +1,18 @@
 import './Product.scss';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import productsData from '../context/context.js';
 
 import Skeleton from '../skeleton/Skeleton';
 import Modal from '../modal/Modal';
 
-const Product = ({ product, products, setProducts }) => {
+const Product = ({ product, setProducts }) => {
 
     const [previewImg, setPreviewImg] = useState();
 
     const [isOpen, setIsOpen] = useState(false);
+
+    const context = useContext(productsData);
 
     useEffect(() => {
         if (product && product.images) {
@@ -39,7 +42,7 @@ const Product = ({ product, products, setProducts }) => {
 
     const handleAddProduct = (product) => {
         const newProduct = product;
-        const newProductList = [...products, newProduct];
+        const newProductList = [...context, newProduct];
         setProducts(newProductList);
     }
 

@@ -8,6 +8,12 @@
     column-gap: 15%;
     row-gap: 30px;
     margin: 90px auto 0 auto;
+    &__empty {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        color: $font-color;
+    }
     &__products {
         grid-column: 1;
         grid-row-start: 1;

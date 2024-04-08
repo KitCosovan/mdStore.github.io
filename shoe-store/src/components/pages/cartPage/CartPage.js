@@ -26,6 +26,7 @@ const CartPage = ({ products, setProducts }) => {
             <main className="main">
                 <Header />
                 <section className="cart-page">
+                    {products.length > 0 ? 
                     <div className="cart-page__products">
                         {products.map((product, index) => (
                             <div className="cart-page__product" key={index}>
@@ -37,7 +38,8 @@ const CartPage = ({ products, setProducts }) => {
                                 <div className="cart-page__product_delete-btn" onClick={() => handleDeleteProduct(index)}>&times;</div>
                             </div>
                         ))}
-                    </div>
+                    </div> :
+                    <div className='cart-page__empty'>Your shopping cart is empty. Please select the item you would like to purchase.</div>}
                     <div className="cart-page__info">
                         <div className="cart-page__title">Total</div>
                         <div className="cart-page__final">

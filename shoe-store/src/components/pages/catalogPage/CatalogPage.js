@@ -8,7 +8,7 @@ import Product from '../../product/Product';
 import Aside from '../../aside/Aside';
 import Footer from '../../footer/Footer';
 
-const CatalogPage = ({ cartProducts, setCartProducts }) => {
+const CatalogPage = ({ setCartProducts }) => {
 
     const [products, setProducts] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -44,7 +44,7 @@ const CatalogPage = ({ cartProducts, setCartProducts }) => {
             <Aside products={products} onProductSelect={handleProductSelect}/>
             <main className="main">
                 <Header />
-                <Product product={selectedProduct} products={cartProducts} setProducts={setCartProducts}/>
+                <Product product={selectedProduct} setProducts={setCartProducts}/>
             </main>
             <Footer />
         </>
