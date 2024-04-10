@@ -1,12 +1,15 @@
 import './cartPage.scss';
-import '../../../media-quaries.css';
 
 import { NavLink } from 'react-router-dom';
 
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
+import { useContext } from 'react';
+import { isActive } from '../../context/context';
 
 const CartPage = ({ products, setProducts }) => {
+
+    const { active } = useContext(isActive);
 
     const sumOfPrices = () => {
         let sum = 0;
@@ -25,7 +28,7 @@ const CartPage = ({ products, setProducts }) => {
         <>
             <main className="main">
                 <Header />
-                <section className="cart-page">
+                <section className={(!active) ? ('cart-page') : ('cart-page blur')}>
                     {products.length > 0 ? 
                     <div className="cart-page__products">
                         {products.map((product, index) => (

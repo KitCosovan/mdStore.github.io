@@ -1,7 +1,7 @@
 import './Product.scss';
 
 import { useState, useEffect, useContext } from 'react';
-import productsData from '../context/context.js';
+import { isActive, productsData } from '../context/context.js';
 
 import Skeleton from '../skeleton/Skeleton';
 import Modal from '../modal/Modal';
@@ -13,6 +13,7 @@ const Product = ({ product, setProducts }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const context = useContext(productsData);
+    const { active } = useContext(isActive);
 
     useEffect(() => {
         if (product && product.images) {
@@ -51,7 +52,7 @@ const Product = ({ product, setProducts }) => {
     }
 
     return (
-        <section className="product">
+        <section className={(!active) ? ('product') : ('product blur')}>
             <div className="product__circle"></div>
             {isOpen && <Modal isOpen={isOpen} closeModal={closeModal} previewImg={previewImg}/>}
             <div className="product__main-img">

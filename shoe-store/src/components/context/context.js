@@ -1,5 +1,4 @@
 import { createContext } from "react";
 
-const productsData = createContext([]);
-
-export default productsData;
+export const productsData = createContext([]);
+export const isActive = createContext(false);

@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+    .intro {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+    .intro {
+        grid-template-columns: 50% 50%;
+        column-gap: 5%;
+        &__title {
+            font-size: 50px;
+        }
+        &__info {
+            font-size: 13px;
+        }
+        &__btn {
+            width: 100%;
+            height: 80px;
+        }
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1450px) {
+    .intro {
+        grid-template-columns: 50% 45%;
+        column-gap: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        &__title {
+            font-size: 55px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .intro {
+        margin-top: 0;
+    }
+}

@@ -2,11 +2,15 @@ import './Aside.scss';
 import './AsideCard.scss';
 
 import logo from '../../img/logo.png';
+import { useContext } from 'react';
+import { isActive } from '../context/context';
 
 const Aside = ({ products, onProductSelect }) => {
 
+    const { active } = useContext(isActive);
+
     return (
-        <aside className="nav-section">
+        <aside className={(!active) ? ('nav-section') : ('nav-section blur')}>
             <div className="nav-section__logo">
                 <img src={logo} alt="logo" />
             </div>

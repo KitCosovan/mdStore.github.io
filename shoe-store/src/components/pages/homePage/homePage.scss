@@ -2,6 +2,7 @@
 
 .intro {
     width: 75vw;
+    max-height: 60vh;
     display: grid;
     grid-template-columns: 50% 30%;
     grid-template-rows: 1fr 1fr 1fr;
@@ -59,4 +60,8 @@
 
 h1 {
     margin: 0;
+}
+
+.blur {
+    filter: blur(15px);
 }

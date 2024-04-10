@@ -1,9 +1,15 @@
 import './Header.scss';
+import './media-quaries.scss';
+
+import BurgerMenu from '../burgerMenu/BurgerMenu';
 
 import { useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+
+    const is992Max = useMediaQuery({ query: '(max-width: 992px'});
 
     useEffect(() => {
         function handleTabClick(event) {
@@ -30,13 +36,17 @@ const Header = () => {
 
     return (
         <header className="nav-menu">
-            <ul className="nav-menu__list">
-                <li className="nav-menu__item"><NavLink to='/' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Main</NavLink></li>
-                <li className="nav-menu__item"><NavLink to='/catalog' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Catalog</NavLink></li>
-                <li className="nav-menu__item"><NavLink to='/contacts' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Contacts</NavLink></li>
-                <li className="nav-menu__item"><NavLink to='/delivery' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Delivery</NavLink></li>
-                <li className="nav-menu__item"><NavLink to='/about' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>About</NavLink></li>
-            </ul>
+            { (is992Max) ? (
+                    <BurgerMenu />
+            ) : (
+                <ul className="nav-menu__list">
+                    <li className="nav-menu__item"><NavLink to='/' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Main</NavLink></li>
+                    <li className="nav-menu__item"><NavLink to='/catalog' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Catalog</NavLink></li>
+                    <li className="nav-menu__item"><NavLink to='/contacts' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Contacts</NavLink></li>
+                    <li className="nav-menu__item"><NavLink to='/delivery' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Delivery</NavLink></li>
+                    <li className="nav-menu__item"><NavLink to='/about' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>About</NavLink></li>
+                </ul>
+            )}
         </header>
     )
 }
