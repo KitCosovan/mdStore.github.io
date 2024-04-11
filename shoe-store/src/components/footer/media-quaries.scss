@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .info {
+        padding: 0 40px;
+        &__tels {
+            background-color: transparent;
+            border-radius: 0;
+            gap: 0;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__tel {
+            font-size: 11px;
+        }
+        &__social {
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .info {
+        &__social {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .info {
+        &__tel {
+            font-size: 10px;
+        }
+    }
+}

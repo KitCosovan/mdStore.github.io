@@ -1,6 +1,8 @@
 import './Footer.scss';
+import './media-quaries.scss';
 
 import { useContext } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import facebook from '../../img/icons/facebook.svg';
 import instagram from '../../img/icons/instagram.svg';
@@ -11,11 +13,13 @@ const Footer = () => {
 
     const { active } = useContext(isActive);
 
+    const is768Max = useMediaQuery({ query: '(max-width: 768px)' });
+
     return (
         <footer className={(!active) ? ('info') : ('info blur')}>
             <div className="info__tels">
                 <div className="info__tel info__tel_first">+373 (79) 123 456</div>
-                <span>/</span>
+                {(!is768Max) ? (<span>/</span>) : null}
                 <div className="info__tel info__tel_second">+373 (79) 456 123</div>
             </div>
             <div className="info__social">

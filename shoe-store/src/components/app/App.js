@@ -39,20 +39,20 @@ function AppContent() {
 
   return (
     <Provider value={selectedProducts}>
-      <div className={`container ${!isVisiblePage ? 'on-intro__container' : ''}`}>
-        <SupButtons productsNum={selectedProducts.length}/>
-        <isActive.Provider value={{ active, handleClick }}>
-          <Routes>
-            <Route path='/cart' element={<CartPage products={selectedProducts} setProducts={setSelectedProducts}/>}/>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/catalog' element={<CatalogPage setCartProducts={setSelectedProducts}/>} />
-            <Route path='/contacts' element={<ContactsPage />} />
-            <Route path='/delivery' element={<DeliveryPage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/privacy' element={<PrivacyPolicy />} />
-          </Routes>
-        </isActive.Provider>
-      </div>
+      <isActive.Provider value={{ active, handleClick }}>
+        <div className={`container ${!isVisiblePage ? 'on-intro__container' : ''}`}>
+          <SupButtons productsNum={selectedProducts.length}/>
+            <Routes>
+              <Route path='/cart' element={<CartPage products={selectedProducts} setProducts={setSelectedProducts}/>}/>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/catalog' element={<CatalogPage setCartProducts={setSelectedProducts}/>} />
+              <Route path='/contacts' element={<ContactsPage />} />
+              <Route path='/delivery' element={<DeliveryPage />} />
+              <Route path='/about' element={<AboutPage />} />
+              <Route path='/privacy' element={<PrivacyPolicy />} />
+            </Routes>
+        </div>
+      </isActive.Provider>
     </Provider>
   );
 }
