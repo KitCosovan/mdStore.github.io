@@ -1,4 +1,5 @@
 import './cartPage.scss';
+import './media-quaries.scss';
 
 import { NavLink } from 'react-router-dom';
 

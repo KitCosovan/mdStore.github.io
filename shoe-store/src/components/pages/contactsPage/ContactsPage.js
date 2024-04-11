@@ -1,4 +1,5 @@
 import './contactsPage.scss';
+import './media-quaries.scss';
 
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
