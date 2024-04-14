@@ -2,14 +2,15 @@ import './Header.scss';
 import './media-quaries.scss';
 
 import BurgerMenu from '../burgerMenu/BurgerMenu';
+import ProductsMenu from '../productsMenu/ProductsMenu';
 
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ products, onProductSelect }) => {
 
-    const is992Max = useMediaQuery({ query: '(max-width: 992px'});
+    const is992Max = useMediaQuery({ query: '(max-width: 992px)'});
 
     useEffect(() => {
         function handleTabClick(event) {
@@ -37,7 +38,10 @@ const Header = () => {
     return (
         <header className="nav-menu">
             { (is992Max) ? (
-                    <BurgerMenu />
+                    <>
+                        <BurgerMenu />
+                        <ProductsMenu products={products} onProductSelect={onProductSelect}/>
+                    </>
             ) : (
                 <ul className="nav-menu__list">
                     <li className="nav-menu__item"><NavLink to='/' className={({isActive}) => isActive ? 'nav-menu__item_active' : ''}>Main</NavLink></li>

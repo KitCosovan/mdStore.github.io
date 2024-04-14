@@ -1,24 +1,26 @@
 import './burgerMenu.scss';
 
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { isActive } from '../context/context';
 
 const BurgerMenu = () => {
+
+    const [isClicked, setIsClicked] = useState(false);
 
     const { active, handleClick } = useContext(isActive);
 
     let btn_class = 'standart';
     let menu_class = 'hidden';
 
-    if (active) {
+    if (active && isClicked) {
         btn_class = 'active';
         menu_class = 'visible';
     }
 
     return (
         <div className="burgerMenu">
-            <div className="burgerMenu_container" onClick={() => {handleClick()}}>
+            <div className="burgerMenu_container" onClick={() => {handleClick(); setIsClicked(!isClicked)}}>
                 <div className={`burgerMenu_btn ${btn_class}`}></div>
             </div>
             <div className={`burgerMenu_list ${menu_class}`}>

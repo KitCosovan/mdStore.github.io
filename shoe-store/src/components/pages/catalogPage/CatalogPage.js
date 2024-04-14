@@ -1,6 +1,5 @@
-import './media-quaries.scss';
-
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import axios from 'axios';
 
 import Header from '../../header/Header';
@@ -9,6 +8,8 @@ import Aside from '../../aside/Aside';
 import Footer from '../../footer/Footer';
 
 const CatalogPage = ({ setCartProducts }) => {
+
+    const is992Max = useMediaQuery({ query: '(max-width: 992px' });
 
     const [products, setProducts] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -41,9 +42,11 @@ const CatalogPage = ({ setCartProducts }) => {
 
     return (
         <>
-            <Aside products={products} onProductSelect={handleProductSelect}/>
+            {(!is992Max) ? 
+                <Aside products={products} onProductSelect={handleProductSelect}/>
+            : null}
             <main className="main">
-                <Header />
+                <Header products={products} onProductSelect={handleProductSelect}/>
                 <Product product={selectedProduct} setProducts={setCartProducts}/>
             </main>
             <Footer />
