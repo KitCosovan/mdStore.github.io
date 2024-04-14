@@ -1,4 +1,5 @@
 import './Product.scss';
+import './media-quaries.scss';
 
 import { useState, useEffect, useContext } from 'react';
 import { isActive, productsData } from '../context/context.js';

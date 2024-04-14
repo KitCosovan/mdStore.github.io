@@ -1,0 +1,27 @@
+@media (max-width: 1350px) {
+    .skeleton {
+        align-items: flex-start;
+        &__circle {
+            width: 250px;
+            height: 250px;
+            margin-left: 25px;
+        }
+        &__img-slider {
+            width: 75px;
+            margin-left: 0;
+            overflow-x: hidden;
+        }
+        &__about {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .skeleton {
+        padding-right: 40px;
+        &__about {
+            width: 350px;
+        }
+    }
+}

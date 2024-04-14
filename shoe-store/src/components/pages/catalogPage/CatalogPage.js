@@ -1,3 +1,5 @@
+import './media-quaries.scss';
+
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
