@@ -3,11 +3,12 @@ import './productsMenu.scss';
 import arrow from '../../img/icons/circle-right.svg';
 import cross from '../../img/icons/cancel-circle.svg';
 import { useState, useContext } from 'react';
-import { isActive } from '../context/context';
+import { isActive, isProductsListActive } from '../context/context';
 
 const ProductsMenu = ({ products, onProductSelect }) => {
 
-    const { active, handleClick } = useContext(isActive);
+    const { handleProductListClick } = useContext(isProductsListActive);
+    const { active } = useContext(isActive);
     const [menuClass, setMenuClass] = useState(false)
     const [isClicked, setIsClicked] = useState(false);
 
@@ -17,7 +18,7 @@ const ProductsMenu = ({ products, onProductSelect }) => {
 
     return (
         <div className="products-menu">
-            <div className={(active && !isClicked) ? 'products-menu__btn blur' : 'products-menu__btn'} onClick={() => {handleMenuClick(); handleClick(); setIsClicked(!isClicked)}}>
+            <div className={(active) ? 'products-menu__btn blur' : 'products-menu__btn'} onClick={() => {handleMenuClick(); handleProductListClick(); setIsClicked(!isClicked)}}>
                 <div className="products-menu__btn_title">Products List</div>
                 <img src={(isClicked) ? cross : arrow} alt="arrow" />
             </div>

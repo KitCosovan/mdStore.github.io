@@ -2,7 +2,7 @@ import './Product.scss';
 import './media-quaries.scss';
 
 import { useState, useEffect, useContext } from 'react';
-import { isActive, productsData } from '../context/context.js';
+import { isActive, isProductsListActive, productsData } from '../context/context.js';
 
 import Skeleton from '../skeleton/Skeleton';
 import Modal from '../modal/Modal';
@@ -15,6 +15,7 @@ const Product = ({ product, setProducts }) => {
 
     const context = useContext(productsData);
     const { active } = useContext(isActive);
+    const { productListActive } = useContext(isProductsListActive);
 
     useEffect(() => {
         if (product && product.images) {
@@ -53,7 +54,7 @@ const Product = ({ product, setProducts }) => {
     }
 
     return (
-        <section className={(!active) ? ('product') : ('product blur')}>
+        <section className={(!active && !productListActive) ? ('product') : ('product blur')}>
             <div className="product__circle"></div>
             {isOpen && <Modal isOpen={isOpen} closeModal={closeModal} previewImg={previewImg}/>}
             <div className="product__main-img">

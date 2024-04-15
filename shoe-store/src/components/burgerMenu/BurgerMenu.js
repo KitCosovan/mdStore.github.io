@@ -1,33 +1,25 @@
 import './burgerMenu.scss';
 
-import { useState, useContext, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { isActive } from '../context/context';
+import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
+import { isActive, isProductsListActive } from '../context/context';
 
 const BurgerMenu = () => {
 
-    const [isClicked, setIsClicked] = useState(false);
-    const location = useLocation();
-
     const { active, handleClick } = useContext(isActive);
+    const { productListActive } = useContext(isProductsListActive);
 
     let btn_class = 'standart';
     let menu_class = 'hidden';
 
-    if (active && isClicked) {
+    if (active) {
         btn_class = 'active';
         menu_class = 'visible';
     }
 
-    useEffect(() => {
-        if (location.pathname === '/cart') {
-            setIsClicked(false);
-        }
-    }, [location]);
-
     return (
         <div className="burgerMenu">
-            <div className={(active && !isClicked) ? "burgerMenu_container blur" : 'burgerMenu_container'} onClick={() => {handleClick(); if (!isClicked) setIsClicked(true)}}>
+            <div className={(productListActive) ? "burgerMenu_container blur" : 'burgerMenu_container'} onClick={() => {handleClick()}}>
                 <div className={`burgerMenu_btn ${btn_class}`}></div>
             </div>
             <div className={`burgerMenu_list ${menu_class}`}>

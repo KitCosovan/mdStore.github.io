@@ -1,14 +1,15 @@
 import './skeleton.scss';
 import './media-quaries.scss';
 import { useContext } from 'react';
-import { isActive } from '../context/context';
+import { isActive, isProductsListActive } from '../context/context';
 
 const Skeleton = () => {
 
     const { active } = useContext(isActive);
+    const { productListActive } = useContext(isProductsListActive);
 
     return (
-        <section className={(!active) ? 'skeleton' : 'skeleton blur'}>
+        <section className={(!active && !productListActive) ? 'skeleton' : 'skeleton blur'}>
             <div className="skeleton__circle pulse"></div>
             <div className="skeleton__img-slider">
                 <div className="skeleton__img-slide pulse"></div>

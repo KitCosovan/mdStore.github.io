@@ -35,3 +35,46 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .product {
+        padding-right: 20px;
+        &__img-slider {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+        height: 60vh;
+        &__circle {
+            margin-top: 0;
+            margin-left: 0;
+            width: 100px;
+        }
+        &__img-slider {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        &__about {
+            margin-top: 20px;
+        }
+        &__title {
+            height: 30px;
+        }
+        &__descr {
+            height: 20px;
+        }
+        &__btn, .skeleton__price {
+            height: 40px;
+        }
+    }
+}

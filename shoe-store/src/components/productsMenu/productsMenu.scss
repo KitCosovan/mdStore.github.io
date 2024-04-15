@@ -6,7 +6,6 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        gap: 30px;
         padding: 20px 0;
         height: 65vh;
         overflow-y: auto;
@@ -50,7 +49,7 @@
         align-items: center;
 
         position: absolute;
-        bottom: 85px;
+        bottom: 12vh;
         right: 20px;
         &_title {
             font-family: "Poppins", sans-serif;
