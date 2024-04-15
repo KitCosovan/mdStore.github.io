@@ -8,8 +8,41 @@
         align-items: center;
         gap: 30px;
         padding: 20px 0;
-        height: 75vh;
+        height: 65vh;
         overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        &::-moz-scrollbar {
+            width: 0px;
+        }
+        &::-ms-scrollbar {
+            width: 0px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-moz-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-ms-scrollbar-track {
+            background: transparent;
+            border-radius: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
+        &::-moz-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
+        &::-ms-scrollbar-thumb {
+            background: $dark-accent;
+            border-radius: 6px;
+        }
     }
     &__btn {
         display: flex;

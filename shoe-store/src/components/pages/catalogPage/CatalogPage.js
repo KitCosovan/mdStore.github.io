@@ -46,7 +46,7 @@ const CatalogPage = ({ setCartProducts }) => {
                 <Aside products={products} onProductSelect={handleProductSelect}/>
             : null}
             <main className="main">
-                <Header products={products} onProductSelect={handleProductSelect}/>
+                <Header showProductsMenu={true} products={products} onProductSelect={handleProductSelect}/>
                 <Product product={selectedProduct} setProducts={setCartProducts}/>
             </main>
             <Footer />

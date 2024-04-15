@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink } from 'react-router-dom';
 
-const Header = ({ products, onProductSelect }) => {
+const Header = ({ showProductsMenu, products, onProductSelect }) => {
 
     const is992Max = useMediaQuery({ query: '(max-width: 992px)'});
 
@@ -40,7 +40,7 @@ const Header = ({ products, onProductSelect }) => {
             { (is992Max) ? (
                     <>
                         <BurgerMenu />
-                        <ProductsMenu products={products} onProductSelect={onProductSelect}/>
+                        { (showProductsMenu) ? <ProductsMenu products={products} onProductSelect={onProductSelect}/> : null }
                     </>
             ) : (
                 <ul className="nav-menu__list">
