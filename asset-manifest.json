@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/mdStore.github.io/static/css/main.de167114.css",
-    "main.js": "/mdStore.github.io/static/js/main.3fba08e7.js",
+    "main.css": "/mdStore.github.io/static/css/main.f701ec69.css",
+    "main.js": "/mdStore.github.io/static/js/main.19b0102f.js",
     "static/media/instagram.svg": "/mdStore.github.io/static/media/instagram.c5181b0770b94d061366252cf3d82982.svg",
     "static/media/twitter.svg": "/mdStore.github.io/static/media/twitter.552380103829201cf993f655189c4c86.svg",
     "static/media/cart.svg": "/mdStore.github.io/static/media/cart.bb028af1d5733f1b35b387dc34815d41.svg",
     "index.html": "/mdStore.github.io/index.html",
     "static/media/facebook.svg": "/mdStore.github.io/static/media/facebook.2d946d6b0fe8031b2cdcadd0b2386b48.svg",
-    "main.de167114.css.map": "/mdStore.github.io/static/css/main.de167114.css.map",
-    "main.3fba08e7.js.map": "/mdStore.github.io/static/js/main.3fba08e7.js.map"
+    "static/media/circle-right.svg": "/mdStore.github.io/static/media/circle-right.c4c441c6219595f56ecbb77655940758.svg",
+    "static/media/cancel-circle.svg": "/mdStore.github.io/static/media/cancel-circle.88e0ac815242a5d5ab579dfb2113b1db.svg",
+    "main.f701ec69.css.map": "/mdStore.github.io/static/css/main.f701ec69.css.map",
+    "main.19b0102f.js.map": "/mdStore.github.io/static/js/main.19b0102f.js.map"
   },
   "entrypoints": [
-    "static/css/main.de167114.css",
-    "static/js/main.3fba08e7.js"
+    "static/css/main.f701ec69.css",
+    "static/js/main.19b0102f.js"
   ]
 }
